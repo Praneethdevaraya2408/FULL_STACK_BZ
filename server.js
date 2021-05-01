@@ -4,9 +4,14 @@ const app = express();
 app.use(express.static(__dirname + "/frontend"));
 //NEW
 app.get("/", function(req, res) {
-    res.send("Welcome to Varsha's Basic Site");
+    res.send("Welcome to PRANEETH Basic Site");
 })
 
+app.get("/noderesume", function(req, res) {
+    let cit=__dirname+"D:\SUNNY\2.jpg"
+    let fnam = __dirname + "/frontend/html/noderesume.html";
+    res.sendFile(fnam);
+})
 app.get("/resume", function(req, res) {
     let fnam = __dirname + "/frontend/html/resume.html";
     res.sendFile(fnam);
