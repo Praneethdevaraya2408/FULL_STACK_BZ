@@ -8,7 +8,6 @@ app.get("/", function(req, res) {
 })
 
 app.get("/noderesume", function(req, res) {
-    let cit=__dirname+"D:\SUNNY\2.jpg"
     let fnam = __dirname + "/frontend/html/noderesume.html";
     res.sendFile(fnam);
 })
