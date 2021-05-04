@@ -13,7 +13,7 @@ app.get("/resume", function(req, res) {
 })
 
 app.get("/google", function(req, res) {
-    let fnam = __dirname + "/google/index.html";
+    let fnam = __dirname + "/frontend/html/index.html";
     res.sendFile(fnam);
 })
 
