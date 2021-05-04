@@ -15,10 +15,14 @@ app.get("/resume", function(req, res) {
     let fnam = __dirname + "/frontend/html/resume.html";
     res.sendFile(fnam);
 })
+app.get("/googleu", function(req, res) {
+    let fnam = __dirname + "/frontend/google/index.html";
+    res.sendFile(fnam);
+})
 
 
 // Heroku will automatically set an environment variable called PORT
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 2001;
 
 // Start the server
 app.listen(PORT, function() {
