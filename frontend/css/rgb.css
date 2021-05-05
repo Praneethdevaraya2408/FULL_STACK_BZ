@@ -1,0 +1,61 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+
+#box {
+    height: 100px;
+    width: 1000px;
+   position: center;
+    text-align: center;
+	text-decoration: solid;
+	font-size: larger;
+	color: #12a83f;
+
+}
+
+.main {
+	height: 400px;
+	width: 250px;
+	display: grid;
+	place-items: center;
+	color: #fff;
+	font-family: verdana;
+	color: rgba(24, 22, 23, 0.897);
+}
+
+
+/* CSS property for slider */
+input[type="range"] {
+	-webkit-appearance: none;
+	height: 10px;
+	width: 80%;
+	border-radius: 50px;
+	outline: none;
+}
+
+/* CSS property for slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 25px;
+	width: 25px;
+	background: rgb(26, 24, 24);
+	border-radius: 50%;
+	cursor:all-scroll;
+}
+
+.main #red {
+	background: linear-gradient(90deg, #000, red);
+}
+
+.main #green {
+	background: linear-gradient(90deg, #000, green);
+}
+
+.main #blue {
+	background: linear-gradient(90deg, #000, blue);
+}
+

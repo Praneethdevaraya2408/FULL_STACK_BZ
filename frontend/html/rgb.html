@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>RGB Colour Generator</title>
+
+	<link rel="stylesheet" type="text/css"
+		href="/css/rgb.css">
+</head>
+
+<body>
+	<h1>RGB Colour Generator</h1>
+    <div id="display">
+        <center><input type="text" id="box"
+			value="rgb(255,255,255)"></center>
+
+
+	
+	<center><div class="main">
+
+		<!-- Range slider for red colour -->
+		Red:<input type="range" id="red"
+			value="255" min="0" max="255" step="1"><br>
+
+		<!-- Range slider for green colour -->
+		Green:<input type="range" id="green"
+			value="255" min="0" max="255">
+
+		<!-- Range slider for blue colour -->
+		Blue:<input type="range" id="blue"
+			value="255" min="0" max="255">
+	</div></center>
+
+	<script src="js/rgb.js"></script>
+</body>
+
+</html>
