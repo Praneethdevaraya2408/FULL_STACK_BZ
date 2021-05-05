@@ -16,6 +16,9 @@ body {
 	color: #12a83f;
 
 }
+h1{
+	color: hsl(69, 93%, 35%);
+}
 
 .main {
 	height: 400px;
