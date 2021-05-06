@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+</head>
+<body>
+    <style>
+        body {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+.main {
+    height:120%;
+    width: 50%;
+    background: hsl(118, 74%, 67%);
+    border-radius: 10px;
+    display: grid;
+    font: 900;
+    place-items: center;
+    color: hsl(0, 3%, 6%);
+    font-family: verdana;
+}
+#bt{
+    color: blue;
+}
+
+    </style>
+<div>
+    <img src="\img\logo123.png" alt="">
+</div>
+<div class="main">
+   <center> <label for="fname" id="f1">FIRSTNAME:</label>
+        <input type="text" name="fname" id="fname"><br><br>
+        <label for="lname">LASTNAME:</label>
+        <input type="text" name="lname" id="lname"><br><br>
+        <label for="email">EMAIL:</label>
+        <input type="text" name="email" id="email"><br><br>
+        <label for="dob">DATE_OF_BIRTH:</label>
+        <input type="date" name="dob" id="dob"><br><br>
+        <label for="roll">ROLL_NUMBER:</label>
+        <input type="text" name="roll" id="roll"><br><br>
+        <label for="clg">Choose a College:</label>
+    <select name="clg" id="clg">
+        <option value="C1">CMRCET</option>
+        <option value="C2">CMRIT</option>
+        <option value="C3">CMRTC</option>
+        <option value="C4">CMREC</option>
+     </select><br><br>
+     <input type="checkbox" name=agree" id="agree">
+     <label for="fname">I AGREEE TO ALL TERMS AND CONDITIONS</label><br><br><br><br>
+     <input type="button" value="REGISTER" id="bt" color="blue">
+</div>
+        
+    </center>
+</body>
+
+</html>
