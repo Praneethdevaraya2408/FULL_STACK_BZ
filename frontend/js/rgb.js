@@ -12,6 +12,7 @@ function myColour() {
 document.getElementById('red')
 	.addEventListener('input', myColour);
 document.getElementById('green')
-	.addEventListener('input', myColour);
+	.addEventListener('input', myColour);-
+	
 document.getElementById('blue')
 	.addEventListener('input', myColour);
