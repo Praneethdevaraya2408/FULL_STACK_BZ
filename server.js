@@ -37,6 +37,18 @@ app.get("/chart", function(req, res) {
     let fnam = __dirname + "/frontend/html/chart.html";
     res.sendFile(fnam);
 })
+app.get("/jq", function(req, res) {
+    let fnam = __dirname + "/frontend/html/JQUERY.html";
+    res.sendFile(fnam);
+})
+app.get("/homepage", function(req, res) {
+    let fnam = __dirname + "/frontend/html/homepage.html";
+    res.sendFile(fnam);
+})
+app.get("/todo", function(req, res) {
+    let fnam = __dirname + "/frontend/html/index2.html";
+    res.sendFile(fnam);
+})
 const PORT = process.env.PORT || 2001;
 
 // Start the server

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="txt">HELLO CMRCET</h1>
+    <button onclick="f1()">CLICK ME</button>
+    <button onclick="f2()">CLICK ME "I WORK WITH JQUERY"</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function f1()
+        {
+            var txt=document.getElementById('txt')
+            txt.innerHTML="hello"
+        }
+        function f2()
+        {
+            $("#txt").fadeToggle();
+        }
+    </script>
+</body>
+</html>
