@@ -1,16 +1,30 @@
 {
   "name": "bz_git",
   "version": "1.0.0",
-  "main": "hai.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "'trap'",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.12.9"
+    "express-ejs-layouts": "^2.5.0",
+    "install": "^0.13.0",
+    "mongoose": "^5.12.10"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Praneethdevaraya2408/FULL_STACK_BZ.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Praneethdevaraya2408/FULL_STACK_BZ/issues"
+  },
+  "homepage": "https://github.com/Praneethdevaraya2408/FULL_STACK_BZ#readme",
   "description": ""
 }
