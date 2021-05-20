@@ -42,7 +42,7 @@ app.get("/jq", function(req, res) {
     let fnam = __dirname + "/frontend/html/JQUERY.html";
     res.sendFile(fnam);
 })
-app.get("/html", function(req, res) {
+app.get("/todo", function(req, res) {
     let fnam = __dirname + "/frontend/html/course.html";
     res.sendFile(fnam);
 })
