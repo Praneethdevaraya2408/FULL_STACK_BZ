@@ -5,16 +5,20 @@ var mongoose= require('mongoose');
 //const bodyParser = require("body-parser");
 var path = require('path');
 var apis= require('./backend/api/allapiroutes.js');
-
+const URI='mongodb+srv://praneeth_2001:praneeth@cluster0.frhiw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-var Connection_String="mongodb+srv://praneeth_2001:praneeth@cluster0.frhiw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-var options={useUnifiedTopology: true, useNewUrlParser: true };
-mongoose.connect(Connection_String,options,function cb(){
-    console.log(Connection_String);
-});
-mongoose.connection.on('connected', function()
-{console.log("Database Connected");})
+const options={useUnifiedTopology: true, useNewUrlParser: true };
+mongoose.connect(URI,options);
+mongoose.connection.on('connected',(err,res)=>{
+ if(err)
+{
+         console.log(err)
+     }
+     else{
+         console.log('DATABASE Connected Successfully..!')
+     }
+ })
 
 app.use(express.static(__dirname + "/frontend"));
 app.use('/api',apis);
@@ -53,7 +57,12 @@ app.get('/:page', function(req, res){
     res.sendFile(__dirname+ '/frontend/html/'+ req.params.page+".html");
     //else  res.sendFile(__dirname+ '/frontend/'+ req.params.page);
 })
-const PORT = process.env.PORT || 2001;
+app.get("/todolocal", function(req, res) {
+    let fnam = __dirname + "/frontend/html/todo_local.html";
+    res.sendFile(fnam);
+})
+
+const PORT = process.env.PORT || 3020;
 
 // Start the server
 app.listen(PORT, function() {
