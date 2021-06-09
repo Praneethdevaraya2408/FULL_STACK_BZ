@@ -1,0 +1,52 @@
+
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    margin-left: 650px;
+    margin-top: 12px;
+}
+.main,#host,#join{
+height: 250px;
+width: 300px;
+text-align: center;
+align-items: center;
+margin-top: 20px;
+margin-left: 300px;
+background-color: hsl(258, 61%, 37%);
+border-radius: 60px;
+font-size: xx-large;
+font-weight: 900;
+cursor: -webkit-grab;
+color: hsl(64, 88%, 52%);
+position: relative;
+border: 0;
+padding: 12px 40px;
+border-radius: 50px;
+font-size: 50px;
+color: #fff;
+outline: 0;
+background-image: linear-gradient(-180deg, #2ce03b 0%, hsla(314, 45%, 35%, 0.603) 100%);
+box-shadow: 0 1rem 1.25rem 0 hsla(355, 105%, 50%, 8), 0 -0.25rem 1.5rem 
+                         rgba(110, 15, 155, 1) inset, 0 0.75rem 0.5rem 
+                         rgba(255,255,255, 0.4) inset, 0 0.25rem 0.5rem 0 
+                         rgba(180, 70, 207, 1) inset;
+
+}
+body, html {
+height: 100%;
+margin: 0;
+}
+
+.bg {
+/* The image used */
+background-image: url("/img/wallpaper.jpg");
+
+/* Full height */
+height: 100%; 
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
