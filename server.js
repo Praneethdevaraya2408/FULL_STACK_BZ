@@ -73,6 +73,10 @@ app.get("/dashboard", function(req, res) {
     let fnam = __dirname + "/frontend/html/dashboard.html";
     res.sendFile(fnam);
 })
+app.get("/quizeee", function(req, res) {
+    let fnam = __dirname + "/frontend/html/homepage.html";
+    res.sendFile(fnam);
+})
 
 app.post("/register",(req,res)=>{
     var fname = req.body.fname;
