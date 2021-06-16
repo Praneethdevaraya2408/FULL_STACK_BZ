@@ -6,14 +6,16 @@ module.exports.isUserValid = function(userJson, cb){
 
     // Do not pass req.body directly as query
     // if req.body = {username:'username'}
-    var query = {username: userJson.username, password:userJson.password, isDeleted:false};
+    var query = {username: userJson.username, password:userJson.password, isDeleted:{$ne : true}};
     userModel.find(query, function(err, collections){
+        console.log('enterd')
         var response = {success: false, message: 'Login Failed', user: null };
         if(err){
             response.message = 'Server Side Error Occured, Try again after some time';
             return cb(response);
         }
         if(collections.length==0){
+            
             response.message = 'Invalid username/password';
             return cb(response);
         }
