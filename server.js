@@ -106,7 +106,7 @@ app.post("/register",(req,res)=>{
     
         
     } else {
-        res.redirect("/newone")
+        res.redirect("/register")
     }
 
 })
